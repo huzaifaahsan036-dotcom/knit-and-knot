@@ -1,0 +1,1 @@
+export default function Loading(){return <div className="container py-24 text-center"><div className="inline-block h-8 w-8 rounded-full border-2 border-brand border-t-transparent animate-spin"/><p className="text-gray-500 mt-4">Loading Knit & Knot…</p></div>}

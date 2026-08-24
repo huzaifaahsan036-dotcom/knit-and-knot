@@ -1,0 +1,2 @@
+export type Product={id:string;category_id:string|null;name:string;slug:string;description:string|null;price:number;sale_price:number|null;stock:number;image_url:string|null;is_featured:boolean;active:boolean;tags:string[];materials:string|null;care_instructions:string|null;categories?:{name:string;slug:string}|null};
+export type CartItem={product:Product;quantity:number;variant?:{id:string;color?:string|null;size?:string|null;customization?:string|null;price:number;stock:number}|null};

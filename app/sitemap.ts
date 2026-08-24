@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next';export default function sitemap():MetadataRoute.Sitemap{const base=process.env.NEXT_PUBLIC_SITE_URL||'https://knit-and-knot-pk.vercel.app';return ['','/shop','/about','/contact','/shipping','/returns','/privacy','/terms'].map(path=>({url:base+path,lastModified:new Date()}))}

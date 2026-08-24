@@ -1,0 +1,1 @@
+'use client';export default function Error({reset}:{error:Error&{digest?:string};reset:()=>void}){return <div className="container py-24 text-center"><h1 className="font-display text-4xl">Something went wrong.</h1><p className="text-gray-500 mt-2">Please try again.</p><button onClick={()=>reset()} className="mt-6 bg-ink text-white rounded-full px-6 py-3">Try again</button></div>}

@@ -1,0 +1,3 @@
+import './globals.css';import type {Metadata} from 'next';import SiteHeader from '@/components/SiteHeader';import Footer from '@/components/Footer';import {Providers} from '@/components/Providers';
+export const metadata:Metadata={title:{default:'Knit & Knot — Handmade Accessories',template:'%s | Knit & Knot'},description:'Premium handmade accessories crafted with care in Pakistan.',metadataBase:new URL(process.env.NEXT_PUBLIC_SITE_URL||'https://knit-and-knot-pk.vercel.app'),openGraph:{title:'Knit & Knot',description:'Premium handmade accessories crafted with care.',images:['/logo.jpg']}};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body><Providers><SiteHeader/><main>{children}</main><Footer/></Providers></body></html>}
